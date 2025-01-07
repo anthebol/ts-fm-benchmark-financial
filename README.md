@@ -1,0 +1,2 @@
+# Overview
+This repository contains work for benchmarking and testing the performance of current time series foundation models on forecasting financial data. The project aims to establish comprehensive benchmarks for how well current foundation models perform on financial time series forecasting tasks, particularly focusing on S&P 500 data at multiple frequencies (daily, weekly, monthly). Furthermore, it explores fine-tuning (LoRA) these foundation models specifically on financial data to enhance their forecasting capabilities.
