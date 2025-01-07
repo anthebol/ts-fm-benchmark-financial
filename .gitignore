@@ -1,0 +1,20 @@
+# Ignore the benchmark virtual environment
+benchmark_venv/
+
+# Ignore Python cache files
+__pycache__/
+
+# Ignore general cache directory
+.cache/
+
+# Ignore the lag-llama venv
+lag-llama/
+
+# Ignore the moment venv
+moment_venv/
+
+timesfm_venv/
+
+pyproject.toml
+
+.DS_Store
