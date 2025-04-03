@@ -2,9 +2,8 @@ import numpy as np
 import pandas as pd
 import yfinance as yf
 
-from utils.normalizer import Normalizer
+from utils.normalize import Normalizer
 
-# Define the ticker symbol and date range
 ticker = "^GSPC"
 start_date = "2004-12-23"
 end_date = "2024-12-23"
@@ -26,6 +25,8 @@ def prepare_dataset(df):
     # Reset index if Date is in index
     if isinstance(data.index, pd.DatetimeIndex):
         data = data.reset_index()
+
+    data["Log_Close"] = np.log(data["Close"])
 
     # Simple returns
     data["Return"] = data["Close"].pct_change()
